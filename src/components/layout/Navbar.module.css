@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Inter:wght@200;400;600;800&family=Lobster&display=swap");
+
+.navibar {
+  /* width: 150vh; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 !important;
+  margin-top: -20px;
+  background: linear-gradient(to right, #ffffff, var(--gray-000));
+  color: var(--gray-100);
+}
+
+a {
+  text-decoration: none;
+}
+h6 {
+  display: inline;
+  font-weight: 700;
+  font-family: "Caveat";
+  font-size: 22px;
+  background-image: linear-gradient(
+    to bottom,
+    #ff0404,
+    rgb(244, 237, 11),
+    rgb(255, 0, 0)
+  );
+  /* color: black; */
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  /* Adicionado: */
+  -webkit-text-fill-color: transparent;
+}
+
+.navibar_logo {
+  display: flex;
+  align-items: center;
+}
+
+.navibar ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navibar li,
+.navibar a {
+  color: var(--dark-700);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0.5em 0.8em;
+  width: fit-content;
+}
+
+.navibar li:hover {
+  background: linear-gradient(to right, #e7e7e7, var(--gray-100));
+  filter: brightness(1.2);
+  color: var(--dark-900);
+}
+
+.navibar li:hover > a {
+  filter: brightness(1.2);
+}
+
+.login-add a {
+  margin-bottom: 1.3rem;
+  color: var(--gray-100);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.buttonNav {
+  font-size: 1em;
+  padding: 0.1em;
+  margin: 0.2em;
+  border-radius: 0.6rem;
+  color: var(--dark-900);
+  transition: filter 0.2s;
+  background: var(--gray-000);
+  cursor: pointer;
+  width: fit-content;
+}
+.buttonNav[disabled] {
+  cursor: not-allowed;
+}
+.buttonNav[disabled] svg {
+  animation: animate 2s infinite;
+}
+.buttonNav:hover {
+  transform: scale(1.02);
+  filter: brightness(1.08);
+  background: linear-gradient(to right, #e7e7e7, var(--gray-100));
+}
+.buttonNavText {
+  color: var(--dark-700);
+}
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

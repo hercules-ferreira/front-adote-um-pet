@@ -1,0 +1,30 @@
+.pet_home_header {
+  margin-bottom: 2em;
+}
+
+.pet_home_header h1 {
+  margin-bottom: 0.3em;
+  width: 90%;
+}
+
+.pet_container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* .pet_card{
+  width: 22%;
+  margin: 1.5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+} */
+
+.pet_card_image {
+  /* background-size: cover;
+  background-position: center;
+  height: 22px;
+  width: 10%;
+  margin-bottom: 1.2em;   */
+}

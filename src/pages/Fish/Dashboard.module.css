@@ -1,0 +1,179 @@
+.petlist_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.petlist_header h1 {
+  margin: 0;
+}
+
+.petlist_header a {
+  text-decoration: none;
+  background: linear-gradient(to right, #717070, #999393);
+  color: var(--gray-000);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0.5em 0.8em;
+  border-radius: 5em;
+  border: 2px solid;
+  margin-top: 1em;
+  font-size: 1.1em;
+  padding: 1em;
+}
+
+.petlist_header a:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+}
+
+.pet_details_container {
+  display: flex;
+  flex-direction: column;
+}
+.petlist_row {
+  border-bottom: 1px solid var(--gray-100);
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.petlist_row image {
+  margin-right: 1em;
+}
+
+.petlist_row span {
+  min-width: 100px;
+}
+
+.actions {
+  margin-left: auto;
+}
+
+h1 {
+  color: var(--gray-100);
+  font-size: 2.3em;
+}
+
+.button {
+  font-size: 1em;
+  padding: 0.7em;
+  margin: 0.2em;
+  border-radius: 0.6rem;
+  color: var(--dark-900);
+  border: 1px solid var(--dark-700);
+  transition: filter 0.2s;
+  background: var(--gray-000);
+  cursor: pointer;
+}
+.button[disabled] {
+  cursor: not-allowed;
+}
+.button[disabled] svg {
+  animation: animate 2s infinite;
+}
+.button:hover {
+  transform: scale(1.02);
+  filter: brightness(1.08);
+  background: linear-gradient(to right, #e7e7e7, var(--gray-100));
+}
+.buttonText {
+  color: var(--dark-700);
+}
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.actions a,
+.actions button {
+  text-decoration: none;
+  background: linear-gradient(to right, #c3c2c2, #f6f3f3);
+  color: var(--gray-100);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 9px 15px;
+  border-radius: 5em;
+  border: 2px solid;
+  font-size: 12px;
+  margin-left: 0.5em;
+}
+
+.mypetsbutton {
+  text-decoration: none;
+  background: linear-gradient(to right, #e7eaf5, #869df2);
+  color: #3c2ced;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 9px 15px;
+  border-radius: 5em;
+  border: 2px solid;
+  font-size: 12px;
+  margin-left: 0.5em;
+}
+
+.actions a:hover,
+.actions button:hover {
+  filter: brightness(1.2);
+  color: var(--dark-900);
+}
+
+.actions .conclude_btn:hover {
+  background: linear-gradient(to right, #7596ef, #414e78);
+}
+
+.cadastrar_pet {
+  text-decoration: none;
+  background: linear-gradient(to right, #c3c2c2, #f6f3f3);
+  color: var(--gray-100);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 9px 15px;
+  border-radius: 5em;
+  border: 2px solid;
+  font-size: 12px;
+  margin-left: 0.5em;
+}
+
+.cadastrar_pet .conclude_btn:hover {
+  filter: brightness(1.2);
+  color: var(--dark-900);
+}
+
+.adopted_text_my {
+  color: var(--gray-100);
+  margin-bottom: 0.3em;
+  font-size: 1.3em;
+  padding: 15px;
+  font-weight: 600;
+  color: var(--gray-100);
+}
+
+.bold_name_pet {
+  color: var(--gray-100);
+  margin-bottom: 0.3em;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 1.6em;
+  color: var(--gray-100);
+}
+
+.bold_meus_pets {
+  color: var(--gray-100);
+  margin-bottom: 0.3em;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 2.2em;
+  color: var(--gray-100);
+}

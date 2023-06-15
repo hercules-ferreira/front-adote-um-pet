@@ -1,0 +1,23 @@
+/* para deixar uma imagem redonda ===> faz ela quadrada:
+.rounded_image {
+  width: 200px;
+  height: 200px;
+, e depois aplica:  border-radius: 100%; */
+
+.rounded_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+/* aqui é para manter as configurações que vem dinâmica do componente */
+/* sempre vai sobrepor o: .rounded_image { */
+  /*  assim nos px pode ser colocar os px :
+  width: 75px;
+  height: 75px;
+  de sua necessidade */
+  
+.rounded_image.px75 {
+  width: 75px;
+  height: 75px;
+}
