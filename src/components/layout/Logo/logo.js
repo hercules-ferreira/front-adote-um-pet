@@ -1,10 +1,13 @@
-import logoCentral from "../../../assets/logo/iron-hack-logo_login_azul.png";
+import logoCentral from "../../../assets/logo/logo-dog-3-menor.jpg";
 import "./logo.css";
 
 export default function LogoCentral() {
   return (
-    // <div className="login-logo__central">
-    <img className="image" src={logoCentral} alt="logo" />
-    // </div>
+    <>
+      <div className="bg"></div>{" "}
+      <div className="login-logo__central">
+        <img className="image__login" src={logoCentral} alt="logo" />{" "}
+      </div>
+    </>
   );
 }

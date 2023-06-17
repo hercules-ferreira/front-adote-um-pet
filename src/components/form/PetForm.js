@@ -51,11 +51,7 @@ export default function PetForm({ handleSubmit, petData, btnText }) {
             ))
           : pet.images &&
             pet.images.map((image, index) => (
-              <img
-                src={`${process.env.REACT_APP_API_URL}/images/pets/${image}`}
-                alt={pet.name}
-                key={`${pet.name}+${index}`}
-              />
+              <img src={image} alt={pet.name} key={`${pet.name}+${index}`} />
             ))}
       </div>
 
@@ -64,7 +60,7 @@ export default function PetForm({ handleSubmit, petData, btnText }) {
         type="file"
         name="images"
         handleOnChange={onFileChange}
-        multiple={true}
+        multiple={false}
       />
 
       <Input

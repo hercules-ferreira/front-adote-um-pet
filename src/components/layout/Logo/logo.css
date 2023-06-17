@@ -1,9 +1,18 @@
-.image {
+.image__login {
   display: flex;
   position: relative;
-  margin-left: auto;
+  margin-left: 665px;
   margin-right: auto;
-  margin-bottom: -10px;
-  width: 500px;
+  width: 130px;
   padding: 0;
+}
+
+.bg {
+  display: flex;
+  position: absolute;
+  margin-left: 670px;
+  margin-right: auto;
+  width: 500px;
+  height: 145px;
+  background: linear-gradient(to right, #ffffff, var(--gray-000));
 }

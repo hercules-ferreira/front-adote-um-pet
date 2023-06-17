@@ -54,7 +54,7 @@ export function Profile() {
     formData.append("user", userFormData);
 
     const data = await api
-      .patch(`/users/edit/${user._id}`, formData, {
+      .patch(`/users/editimage/${user._id}`, formData, {
         headers: {
           Authorization: `Bearer ${JSON.parse(token)}`,
           "Content-Type": "multipart/form-data",
@@ -62,6 +62,8 @@ export function Profile() {
       })
       .then((response) => {
         console.log(response.data);
+        console.log("imagem:", response.data.image);
+
         return response.data;
       })
       .catch((err) => {
@@ -78,11 +80,7 @@ export function Profile() {
       <div className={styles.profile_header}>
         {(user.image || preview) && (
           <RoundedImage
-            src={
-              preview
-                ? URL.createObjectURL(preview)
-                : `${process.env.REACT_APP_API_URL}/images/users/${user.image}`
-            }
+            src={preview ? URL.createObjectURL(preview) : user.image}
             alt={user.name}
           />
         )}

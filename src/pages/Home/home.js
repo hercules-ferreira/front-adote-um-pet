@@ -27,11 +27,7 @@ export function Home() {
           {pets.length > 0 &&
             pets.map((pet) => (
               <div key={pet._id}>
-                <HomeImage
-                  src={`${process.env.REACT_APP_API_URL}/images/pets/${pet.images[0]}`}
-                  alt={pet.name}
-                  width="px75"
-                />
+                <HomeImage src={pet.images[0]} alt={pet.name} width="px75" />
 
                 {/* 
               <div

@@ -48,19 +48,34 @@ function RoutesApp() {
             <Route path="*" element={<div>não encontrado</div>} />
 
             {/* Routes Private */}
+
+            <Route
+              path="/user/profile"
+              element={<ProtectRoutes component={Profile} />}
+            />
+
             <Route
               path="/fish/edit/:id"
               element={<ProtectRoutes component={EditFish} />}
+            />
+            <Route
+              path="/fish/myfishs"
+              element={<ProtectRoutes component={MyFishs} />}
+            />
+
+            <Route
+              path="/addnewfishs"
+              element={<ProtectRoutes component={AddNewFishs} />}
+            />
+
+            <Route
+              path="/fish/:id"
+              element={<ProtectRoutes component={FishsDetails} />}
             />
 
             <Route
               path="/bird/mybirds"
               element={<ProtectRoutes component={MyBirds} />}
-            />
-
-            <Route
-              path="/fish/myfishs"
-              element={<ProtectRoutes component={MyFishs} />}
             />
 
             <Route
@@ -74,26 +89,11 @@ function RoutesApp() {
             />
 
             <Route
-              path="/addnewfishs"
-              element={<ProtectRoutes component={AddNewFishs} />}
-            />
-
-            <Route
               path="/bird/:id"
               element={<ProtectRoutes component={BirdsDetails} />}
             />
-
-            <Route
-              path="/fish/:id"
-              element={<ProtectRoutes component={FishsDetails} />}
-            />
-
             {/*  */}
 
-            <Route
-              path="/user/profile"
-              element={<ProtectRoutes component={Profile} />}
-            />
             <Route
               path="/pet/mypets"
               element={<ProtectRoutes component={MyPets} />}
@@ -106,6 +106,7 @@ function RoutesApp() {
               path="/pet/edit/:id"
               element={<ProtectRoutes component={EditPet} />}
             />
+
             <Route
               path="/pet/myadoptions"
               element={<ProtectRoutes component={MyAdoptions} />}
