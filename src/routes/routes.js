@@ -25,7 +25,7 @@ import { FishsDetails } from "../pages/Fish/FishDetails";
 import { MyBirds } from "../pages/Bird/MyBirds";
 import { EditBird } from "../pages/Bird/EditBird";
 import { MyFishs } from "../pages/Fish/MyFishs";
-import { EditFish } from "../pages/Fish/EditBird";
+import { EditFish } from "../pages/Fish/EditFish";
 
 function RoutesApp() {
   return (

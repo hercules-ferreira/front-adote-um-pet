@@ -1,43 +1,42 @@
 import api from "../../utils/api";
-
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
-import styles from "./Add.module.css";
-
-// import styles from "../../components/layout/HomeImage.module.css";
-import HomeImage from "../../components/layout/HomeImage";
-import RoundedImage from "../../components/layout/RoundedImage";
-import useFlashMessage from "../../hooks/useFlashMessage";
 import { useNavigate } from "react-router-dom";
+// import { useState, useEffect } from "react";
+import styles from "./AddPet.module.css";
+import { useState } from "react";
+// import RoundedImage from "../../layout/RoundedImage";
+import useFlashMessage from "../../hooks/useFlashMessage";
+
 import { FishForm } from "../../components/form/FishForm";
 
 export function AddNewFishs() {
-  const navigate = useNavigate();
   const [token] = useState(localStorage.getItem("token") || "");
   const { setFlashMessage } = useFlashMessage();
-  navigate("/fishs");
+  const navigate = useNavigate();
 
   async function registerFish(fish) {
     let msgType = "success";
+
     const formData = new FormData();
 
-    await Object.keys(fish).forEach((key) => {
+    const fishFormData = await Object.keys(fish).forEach((key) => {
       if (key === "images") {
         for (let i = 0; i < fish[key].length; i++) {
-          formData.append("images", fish[key][i]);
+          formData.append(`images`, fish[key][i]);
         }
       } else {
         formData.append(key, fish[key]);
       }
     });
+
+    formData.append("fish", fishFormData);
+
     const data = await api
-      .post("/fishs/createfish", formData, {
+      .post(`fishs/createfish`, formData, {
         headers: {
           Authorization: `Bearer ${JSON.parse(token)}`,
           "Content-Type": "multipart/form-data",
         },
       })
-
       .then((response) => {
         console.log(response.data);
         return response.data;
@@ -51,17 +50,17 @@ export function AddNewFishs() {
     setFlashMessage(data.message, msgType);
 
     if (msgType !== "error") {
-      navigate("/fishs  ");
+      navigate("/fish/myfishs");
     }
   }
 
   return (
     <section>
-      <div>
-        <h1>Cadastre um novo Peixe</h1>
+      <div className={styles.addpet_header}>
+        <h1>Cadastre um Peixe</h1>
+        <p>Depois ele ficará disponível para adoção</p>
       </div>
-
-      <FishForm handleSubmit={registerFish} btnText="Cadastrar Peixe" />
+      <FishForm handleSubmit={registerFish} btnText="Cadastrar" />
     </section>
   );
 }
