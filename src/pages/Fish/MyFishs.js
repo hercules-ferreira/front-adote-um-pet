@@ -112,18 +112,18 @@ export function MyFishs() {
                           Concluir adoção
                         </button>
                       )}
-                      <Link to={`/fish/edit/${fish._id}`}>Editar Pássaro</Link>
+                      <Link to={`/fish/edit/${fish._id}`}>Editar Peixe</Link>
                       <button
                         className="button"
                         onClick={() => {
                           removeFish(fish._id);
                         }}
                       >
-                        Excluir Pássaro
+                        Excluir Peixe
                       </button>
                     </>
                   ) : (
-                    <p className={styles.adopted_text_my}>Pássaro Já adotado</p>
+                    <p className={styles.adopted_text_my}>Peixe Já adotado</p>
                   )}
                 </div>
               </div>
