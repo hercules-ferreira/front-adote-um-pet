@@ -56,7 +56,7 @@ export default function PetForm({ handleSubmit, petData, btnText }) {
       </div>
 
       <Input
-        text="Imagens do pet"
+        text="Imagens do Pet"
         type="file"
         name="images"
         handleOnChange={onFileChange}

@@ -29,11 +29,7 @@ export function MyAdoptions() {
         {pets.length > 0 &&
           pets.map((pet) => (
             <div key={pet._id} className={styles.petlist_row}>
-              <RoundedImage
-                src={`${process.env.REACT_APP_API_URL}/images/pets/${pet.images[0]}`}
-                alt={pet.name}
-                width="px75"
-              />
+              <RoundedImage src={pet.images[0]} alt={pet.name} width="px75" />
               <span className={styles.bold_name_pet}>{pet.name}</span>
               <div className={styles.contacts}>
                 <p>

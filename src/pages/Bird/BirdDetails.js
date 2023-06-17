@@ -34,11 +34,7 @@ export function BirdsDetails() {
             <div>
               {bird.images.map((image, index) => (
                 <div key={bird._id}>
-                  <RoundedImage
-                    src={`${process.env.REACT_APP_API_URL}/images/${image}`}
-                    alt={bird.name}
-                    key={index}
-                  />
+                  <RoundedImage src={image} alt={bird.name} key={index} />
                 </div>
               ))}
             </div>

@@ -34,11 +34,7 @@ export function FishsDetails() {
             <div>
               {fish.images.map((image, index) => (
                 <div key={fish._id}>
-                  <RoundedImage
-                    src={`${process.env.REACT_APP_API_URL}/images/${image}`}
-                    alt={fish.name}
-                    key={index}
-                  />
+                  <RoundedImage src={image} alt={fish.name} key={index} />
                 </div>
               ))}
             </div>

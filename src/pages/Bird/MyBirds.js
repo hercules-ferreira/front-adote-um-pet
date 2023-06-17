@@ -94,7 +94,7 @@ export function MyBirds() {
             birds.map((bird) => (
               <div key={bird._id} className={styles.petlist_row}>
                 <RoundedImage
-                  src={`${process.env.REACT_APP_API_URL}/images/${bird.images[0]}`}
+                  src={bird.images[0]}
                   alt={bird.name}
                   width="px75"
                 />

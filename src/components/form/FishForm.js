@@ -60,11 +60,7 @@ export function FishForm({ handleSubmit, fishData, btnText }) {
             ))
           : fish.images &&
             fish.images.map((image, index) => (
-              <img
-                src={`${process.env.REACT_APP_API_URL}/images/fishs/${image}`}
-                alt={fish.name}
-                key={`${fish.name}+${index}`}
-              />
+              <img src={image} alt={fish.name} key={`${fish.name}+${index}`} />
             ))}
       </div>
 

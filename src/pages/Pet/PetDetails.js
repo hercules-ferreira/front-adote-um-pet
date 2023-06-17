@@ -63,7 +63,7 @@ export function PetDetails() {
                       {pet.images.map((image, index) => (
                         <div key={pet._id} className={styles.petlist_row}>
                           <RoundedImage
-                            src={`${process.env.REACT_APP_API_URL}/images/pets/${image}`}
+                            src={image}
                             alt={pet.name}
                             key={index}
                           />

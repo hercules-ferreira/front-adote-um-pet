@@ -94,7 +94,7 @@ export function MyFishs() {
             fishs.map((fish) => (
               <div key={fish._id} className={styles.petlist_row}>
                 <RoundedImage
-                  src={`${process.env.REACT_APP_API_URL}/images/${fish.images[0]}`}
+                  src={fish.images[0]}
                   alt={fish.name}
                   width="px75"
                 />

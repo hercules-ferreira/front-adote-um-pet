@@ -27,11 +27,7 @@ export function HomeFishs() {
           {fishs.length > 0 &&
             fishs.map((fish) => (
               <div className={styles.pet_card} key={fish._id}>
-                <HomeImage
-                  src={`${process.env.REACT_APP_API_URL}/images/${fish.images[0]}`}
-                  alt={fish.name}
-                  width="px75"
-                />
+                <HomeImage src={fish.images[0]} alt={fish.name} width="px75" />
 
                 <h3 className={styles.pet_card_h3}>{fish.name}</h3>
                 <p>

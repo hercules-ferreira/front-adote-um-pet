@@ -88,7 +88,7 @@ export function Profile() {
 
       <form onSubmit={handleSubmit} className={formStyles.form_container}>
         <Input
-          text="imagem"
+          text="Imagem"
           type="file"
           name="image"
           handleOnChange={onFileChange}

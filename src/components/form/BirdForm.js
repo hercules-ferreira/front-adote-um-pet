@@ -60,11 +60,7 @@ export function BirdForm({ handleSubmit, birdData, btnText }) {
             ))
           : bird.images &&
             bird.images.map((image, index) => (
-              <img
-                src={`${process.env.REACT_APP_API_URL}/images/birds/${image}`}
-                alt={bird.name}
-                key={`${bird.name}+${index}`}
-              />
+              <img src={image} alt={bird.name} key={`${bird.name}+${index}`} />
             ))}
       </div>
 

@@ -29,16 +29,6 @@ export function Home() {
               <div key={pet._id}>
                 <HomeImage src={pet.images[0]} alt={pet.name} width="px75" />
 
-                {/* 
-              <div
-                style={{
-                  backgroundImage: `url(${process.env.REACT_APP_API}/images/pets/${pet.images[0]})`,
-                }}
-                className={styles.pet_card_image}>
-                </div>
-
- */}
-
                 <h3 className={styles.pet_card_h3}>{pet.name}</h3>
                 <p>
                   <span className={styles.bold_Peso}>Peso:</span> {pet.weight}kg
