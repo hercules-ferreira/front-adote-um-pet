@@ -34,15 +34,17 @@ export function EditPet() {
 
     const formData = new FormData();
 
-    const petFormData = await Object.keys(pet).forEach((key) => {
-      if (key === "images") {
-        for (let i = 0; i < pet[key].length; i++) {
-          formData.append(`images`, pet[key][i]);
-        }
-      } else {
-        formData.append(key, pet[key]);
-      }
-    });
+    const petFormData = await Object.keys(pet).forEach(
+      (key) =>
+        // if (key === "images") {
+        // for (let i = 0; i < pet[key].length; i++) {
+        formData.append(key, pet[key])
+      // formData.append(`images`, pet[key]);
+      // }
+      // } else {
+      // }
+      // });
+    );
 
     formData.append("pet", petFormData);
 
