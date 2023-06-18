@@ -16,9 +16,8 @@ import { AddPets } from "../pages/Pet/AddPet";
 import { EditPet } from "../pages/Pet/EditPet";
 import { PetDetails } from "../pages/Pet/PetDetails";
 import { MyAdoptions } from "../pages/Pet/MyAdoptions";
-import { HomeBirds } from "../pages/HomeBirds/homeBirds";
-import { BirdsDetails } from "../pages/Bird/BirdDetails";
-import { AddNewBirds } from "../pages/Bird/AddNewBirds";
+import { BirdsDetails } from "../pages/Bird/BirdDetailsNew";
+import { AddNewBirds } from "../pages/Bird/AddBirdNewImage";
 import { HomeFishs } from "../pages/HomeFish/homeFishs";
 import { AddNewFishs } from "../pages/Fish/AddNewFishs";
 import { FishsDetails } from "../pages/Fish/FishDetails";
@@ -26,6 +25,7 @@ import { MyBirds } from "../pages/Bird/MyBirds";
 import { EditBird } from "../pages/Bird/EditBird";
 import { MyFishs } from "../pages/Fish/MyFishs";
 import { EditFish } from "../pages/Fish/EditFish";
+import { HomeBirdNew } from "../pages/HomeBirds/homeBirdNew";
 
 function RoutesApp() {
   return (
@@ -38,7 +38,7 @@ function RoutesApp() {
           <Routes>
             {/* Routes Public */}
 
-            <Route path="/birds" element={<HomeBirds />} />
+            <Route path="/birds" element={<HomeBirdNew />} />
             <Route path="/fishs" element={<HomeFishs />} />
 
             <Route path="/" element={<Home />} />

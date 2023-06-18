@@ -76,7 +76,7 @@ export function BirdForm({ handleSubmit, birdData, btnText }) {
         text="Nome do Pássaro"
         type="text"
         name="name"
-        placeholder="Digite o nome do Bird"
+        placeholder="Digite o nome do Pássaro"
         handleOnChange={handleChange}
         value={bird.name || ""}
       />
@@ -85,7 +85,7 @@ export function BirdForm({ handleSubmit, birdData, btnText }) {
         text="Idade do Pássaro"
         type="number"
         name="age"
-        placeholder="Digite a idade do Bird"
+        placeholder="Digite a idade do Pássaro"
         handleOnChange={handleChange}
         value={bird.age || ""}
       />
