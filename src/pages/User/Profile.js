@@ -127,7 +127,7 @@ function Profile() {
           placeholder="Confirme a sua senha"
           handleOnChange={handleChange}
         />
-        <input type="submit" value="Editar" />
+        <input type="submit" value="Editar" style={{ marginTop: "1px" }} />
       </form>
     </section>
   );
