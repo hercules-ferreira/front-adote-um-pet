@@ -51,10 +51,6 @@ https://adote-new-pet.netlify.app
 📌 [Funcionalidades](https://github.com/ai/size-limit#readme) - O usuário precisará apenas clicar no link de acesso, e fazer um cadastro para poder ver as opções do site.
 
 
-
-
-
-
 <h1><span style="color:blue">
 <font size=30>📈 Exemplos de uso do Site
 </font></span></h1>
@@ -117,9 +113,6 @@ https://adote-new-pet.netlify.app
 📌 [Objetivos](https://github.com/ai/size-limit#readme) do Site será, colocar uma área com vários níveis de privilégios, de acordo com o ranking do usuário, e suas contribuições.
 
 
-<h1><span style="color:blue">
-<font size=30>📋 Principais aplicações para a confecção do Site
-</font></span></h1>
 
 
 <h1><span style="color:blue">
