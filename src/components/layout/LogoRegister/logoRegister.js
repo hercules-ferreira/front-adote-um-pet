@@ -3,11 +3,10 @@ import "./logo.css";
 
 export default function LogoCentralRegister() {
   return (
-    // <div classNa
-
     <>
-      <div className="bg__register"></div>{" "}
-      <img className="image__register" src={logoCentral} alt="logo" />
+      <div className="bg__register">
+        <img className="image__register" src={logoCentral} alt="logo" />
+      </div>{" "}
     </>
   );
 }

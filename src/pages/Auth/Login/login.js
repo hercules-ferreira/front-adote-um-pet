@@ -20,7 +20,7 @@ export function Login() {
   }
   return (
     <>
-      <div>
+      <div className="container__logo">
         <LogoCentral />
       </div>
       <div className="container-center">

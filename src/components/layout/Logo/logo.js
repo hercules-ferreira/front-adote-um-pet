@@ -4,10 +4,9 @@ import "./logo.css";
 export default function LogoCentral() {
   return (
     <>
-      <div className="bg"></div>{" "}
-      <div className="login-logo__central">
-        <img className="image__login" src={logoCentral} alt="logo" />{" "}
-      </div>
+      <div className="bg__register">
+        <img className="image__register" src={logoCentral} alt="logo" />
+      </div>{" "}
     </>
   );
 }
