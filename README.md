@@ -23,7 +23,7 @@
 
 📜 Para a confecção do site, as principais ferramentas utilizadas, foram: React, JS ES6.
 <br>
-📜 Combinando com os métodos: GET, POST, PUT e DELETE, para a conexão com API, e deploy, em: © 2023 Netlify, e © 2021-2023 Cyclic Software.
+📜 Combinando com os métodos: GET, POST, PUT e DELETE, para a conexão com API, e deploy, em: Netlify © 2023 , e Cyclic Software © 2021-2023.
 <br>
 📜 Faça a diferença e contribua com a felicidade de muitos. Tanto de uma pessoa com a adoção, de um lindo Pet, ou contribua que seu filhotinho receba um novo lindo lar.
 <br>
